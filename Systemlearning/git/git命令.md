@@ -27,3 +27,19 @@ git clone + github地址
 
 删除分支：git branch –d name
 ```
+# 多个远程库，需要设置多个公钥密钥
+Windows的config文件后缀（选全部），Linux直接建文件夹即可
+```
+#github server one
+Host github.com
+Hostname github.com
+User Dukegeek
+PreferredAuthentications publickey
+IdentityFile C:\\Users\\\ASUS\\.ssh\\id_rsa
+#github server two-sitech
+Host git.si-tech.com.cn
+Hostname git.si-tech.com.cn
+User dengchong
+PreferredAuthentications publickey
+IdentityFile C:\\Users\\\ASUS\\.ssh\\id_rsa_two	
+```
